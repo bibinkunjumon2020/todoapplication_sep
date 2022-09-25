@@ -1,0 +1,15 @@
+
+django.views
+
+generics.py ->
+View()
+CreateView()
+ListView()
+DeleteView()
+UpdateView()
+DetailView()
+
+TemplateView()  - to render template
+
+FormView() in forms
+
