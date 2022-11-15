@@ -10,3 +10,22 @@ class Todos(models.Model):
 
     def __str__(self):
         return self.task_name
+
+
+class Bird(models.Model):
+    common_name = models.CharField(max_length=250)
+    scientific_name = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.common_name
+
+class Animal(models.Model):
+    color=models.CharField(max_length=100)
+    name=models.CharField(max_length=100)
+    age=models.IntegerField()
+    food=models.CharField(max_length=100)
+
+class Human(models.Model):
+    job=models.CharField(max_length=100)
+    age=models.IntegerField()
+    car=models.CharField(max_length=100)
